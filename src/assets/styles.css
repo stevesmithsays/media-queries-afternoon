@@ -1,0 +1,115 @@
+/* SITE-WIDE THANGS */
+
+html{
+    font-size: 16px; 
+    background-color: #2A292B; 
+    font-family: Arial, Helvetica, sans-serif;  
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+a :hover{
+    color: #FEBD0B;
+}
+
+/********** HEADER THANGS *********/
+
+.hero{
+    width: 100%;
+    height: 550px;
+    background-image:url('./header-bg.jpg');
+    background-position: center;
+}
+
+h1{
+    color: white;
+    text-transform: capitalize;
+    text-align: center;
+    position: relative;
+    top: 90px;
+}
+.hero p{
+    color: white;
+    font-size: 4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: .25rem;
+    text-align: center;
+    padding-top: 3rem;
+}
+
+.top-button{
+    background-color: #FEBD0B;
+    height: 4rem;
+    width: 11rem;
+    border-radius: 3%;
+    display: block;
+    margin: 0 auto;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+}
+
+
+.site-logo{
+    /* background-color: darkolivegreen; */
+    float: left;
+    padding: 4px;
+    margin: 4px;
+    position: relative;
+    top: 15px;
+    text-transform: capitalize;
+    color: #FEBD0B;
+    font-size: 2rem;
+    font-family: 'Kaushan Script', cursive;
+}
+
+.container{
+    /* background-color: grey; */
+    padding: 4px;
+}
+
+.site-nav{
+    /* background-color: lightblue; */
+    text-align: right;
+}
+
+.site-nav a{
+    margin: 0 auto;
+    padding: 4px;
+    margin: 10px auto;
+    display: inline-block;
+    text-align: center;
+    font-size: 1.5rem;
+    position: scroll;
+}
+.site-nav li{
+    /* background-color: lightcoral; */
+    display: inline-block;
+    
+    padding: 4px;
+    text-align: center;
+}
+
+@media screen and (max-width: 800px){
+    nav.site-nav li {
+        display: none;
+    }
+    .site-logo{
+        font-size: 1.5rem;
+    }
+}
+
+
+/********* MAIN SECTION **********/
+.main-sect{
+    height: 500px;
+}
+
