@@ -59,7 +59,6 @@ h1{
 
 
 .site-logo{
-    /* background-color: darkolivegreen; */
     float: left;
     padding: 4px;
     margin: 4px;
@@ -72,12 +71,10 @@ h1{
 }
 
 .container{
-    /* background-color: grey; */
     padding: 4px;
 }
 
 .site-nav{
-    /* background-color: lightblue; */
     text-align: right;
 }
 
@@ -90,12 +87,48 @@ h1{
     font-size: 1.5rem;
     position: scroll;
 }
+
 .site-nav li{
-    /* background-color: lightcoral; */
     display: inline-block;
-    
     padding: 4px;
     text-align: center;
+}
+
+.menu-btn{
+  display: inline-block;
+  background: #FEBD0B;
+  color: white;
+  height: 50px;
+  width: 80px;
+  border-radius: 10%;
+  bottom: 200px;
+}
+
+.dropdown{
+  position: relative;
+  display: inline-block;
+}
+
+
+.dropdown-content {
+  background: #2A292B;
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  background: #2A292B;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  float:left;
+}
+
+.dropdown-content a:hover{
+  color: #FEBD0B;
 }
 
 @media screen and (max-width: 800px){
@@ -106,6 +139,23 @@ h1{
         font-size: 1.5rem;
     }
 }
+
+@media screen and (min-width: 600px){
+  .menu-btn{
+    display:none;
+  }
+  #myDropdown{
+    display: none;
+  }
+  .dropdown-content{
+    display:none;
+  }
+}
+.show {
+  display: block;
+}
+
+
 
 
 /********* MAIN SECTION **********/
